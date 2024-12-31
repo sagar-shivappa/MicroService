@@ -1,0 +1,21 @@
+meta {
+  name: Add a comment
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:4001/posts/f4130981/comments
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "comment":"2nd  Comment"
+  }
+}
